@@ -24,7 +24,8 @@ for color in pxColor:
     bestMatch = [500, " "]
 
     for listColor in listOfColors:
-        colorLAB2 = convRGBtoLAB(listOfColors[listColor])
+        print(listOfColors[listColor])
+        colorLAB2 = convRGBtoLAB(listColor)
 
         dif = deltaE_1994(colorLAB1, colorLAB2)
 
