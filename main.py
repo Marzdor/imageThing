@@ -26,17 +26,12 @@ for color in pxColor:
     bestMatch = [500, " "]
 
     for listColor in listOfColors:
-#        print(listColorRGB)
-        colorLAB2 = convRGBtoLAB(listColorRGB)
+        colorLAB2 = convRGBtoLAB(listOfColors[listColor])
 
         dif = deltaE_1994(colorLAB1, colorLAB2)
 
         if dif < bestMatch[0]:
             bestMatch[0] = dif
             bestMatch[1] = listColor
+
         pxColorNamed[bestMatch[1]] = pxColor[color]
-#        print("pxColor[color] = ", pxColor[color], " diff = ", dif, " bestMatch[0] = ", bestMatch[0])
-
-for px in pxColorNamed:
-
-    print("Key : " , px, " ", "Value : ", pxColorNamed[px])
