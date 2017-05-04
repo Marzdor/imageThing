@@ -9,6 +9,7 @@ imgWidth, imgHeight = myImg.size
 
 pxColor = defaultdict(int)
 pxColorNamed = defaultdict(int)
+listOfColors = defaultdict(int)
 
 for pixel in list(myImg.getdata()):
     pxColor[pixel] += 1
@@ -16,7 +17,8 @@ for pixel in list(myImg.getdata()):
 with open('ColorList.csv') as infile:
     reader = csv.DictReader(infile, delimiter=';')
     for row in reader:
-        listOfColors = (row['Name'], row['RGB'])
+        listColorRGB = (int(row['R']), int(row['G']), int(row['B']))
+        listOfColors[row['Name']] = (listColorRGB)
 
 for color in pxColor:
 
@@ -24,18 +26,16 @@ for color in pxColor:
     bestMatch = [500, " "]
 
     for listColor in listOfColors:
-        print(listOfColors[listColor])
-        colorLAB2 = convRGBtoLAB(listColor)
+#        print(listColorRGB)
+        colorLAB2 = convRGBtoLAB(listColorRGB)
 
         dif = deltaE_1994(colorLAB1, colorLAB2)
-
-        print("diff = ", dif, "bestMatch[0] = ", bestMatch[0])
 
         if dif < bestMatch[0]:
             bestMatch[0] = dif
             bestMatch[1] = listColor
-
-    pxColorNamed[bestMatch[1]] = pxColor[color]
+        pxColorNamed[bestMatch[1]] = pxColor[color]
+#        print("pxColor[color] = ", pxColor[color], " diff = ", dif, " bestMatch[0] = ", bestMatch[0])
 
 for px in pxColorNamed:
 
