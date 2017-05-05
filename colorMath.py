@@ -1,3 +1,5 @@
+# Contains functions to convert RGB->LAB and deltaE_1994
+
 import math
 
 def convRGBtoLAB(color):

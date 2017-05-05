@@ -1,6 +1,7 @@
 from PIL import Image
 from collections import defaultdict
 from colorMath import *
+from fileOutput import *
 import csv
 
 myImg = Image.open('testImg.jpg')
@@ -34,4 +35,8 @@ for color in pxColor:
             bestMatch[0] = dif
             bestMatch[1] = listColor
 
-        pxColorNamed[bestMatch[1]] = pxColor[color]
+    pxColorNamed[bestMatch[1]] += pxColor[color]
+
+outputDictToFile('pxColor.csv', pxColor)
+outputDictToFile('pxColorNamed.csv', pxColorNamed)
+outputDictToFile('listOfColors.csv', listOfColors)
