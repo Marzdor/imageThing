@@ -1,46 +1,97 @@
-"(95, 158, 160)",2213673
-"(169, 169, 169)",404362
-"(128, 128, 128)",420392
-"(112, 128, 144)",54817
-"(119, 136, 153)",23028
-"(105, 105, 105)",74498
-"(47, 79, 79)",263372
-"(32, 178, 170)",118
-"(0, 0, 0)",129756
-"(160, 82, 45)",1354
-"(192, 192, 192)",87314
-"(188, 143, 143)",10281
-black,107
-"(0, 128, 128)",962
-"(72, 61, 139)",3
-"(176, 196, 222)",31
-"(211, 211, 211)",683
-dim gray / dim grey,6
-"(0, 139, 139)",19
-"(139, 69, 19)",172
-"(85, 107, 47)",331
-"(128, 128, 0)",178
-"(184, 134, 11)",87
-"(218, 165, 32)",45
-"(189, 183, 107)",30
-"(245, 222, 179)",10
-"(250, 235, 215)",17
-"(210, 180, 140)",41
-"(250, 240, 230)",11
-"(253, 245, 230)",1
-"(220, 220, 220)",6
-"(255, 250, 250)",3
-"(245, 245, 245)",2
-"(255, 245, 238)",4
-"(255, 255, 255)",1
-"(245, 245, 220)",1
-"(205, 133, 63)",13
-"(205, 92, 92)",82
-"(165, 42, 42)",461
-"(128, 0, 0)",85
-"(216, 191, 216)",2
-"(139, 0, 0)",1
-"(72, 209, 204)",5
-"(176, 224, 230)",2
-dark gray / dark grey,31
-gray / grey,2
+black,5630
+maroon,6
+sienna,937
+saddle brown,17
+firebrick,392
+indian red,5
+chocolate,359
+red,462
+orange red,514
+brown,4
+crimson,1
+dim gray / dim grey,27
+coral,76
+peru,25
+light gray / light grey,24
+gray / grey,4
+medium sea green,331
+burly wood,11
+tomato,48
+sea green,882
+dark khaki,51
+forest green,471
+olive drab,23
+dark sea green,35
+tan,15
+dark golden rod,8
+salmon,1
+dark salmon,8
+dark orange,3
+light salmon,5
+peach puff,14
+misty rose,18
+bisque,6
+moccasin,3
+khaki,87
+yellow,39
+gold,965
+orange,434
+golden rod,1363
+antique white,18
+linen,12
+honeydew,19
+lavender,53
+gainsboro,26
+beige,16
+pale golden rod,11
+papaya whip,2
+white smoke,9
+azure,5
+light cyan,11
+alice blue,17
+lavender blush,13
+thistle,29
+dark olive green,264
+old lace,1
+navajo white,2
+light steel blue,17
+light slate gray,65
+steel blue,591
+dark slate gray,81
+cadet blue,3
+powder blue,8
+pale turquoise,3
+silver,42
+wheat,5
+dark green,563
+floral white,2
+mint cream,10
+light blue,5
+slate gray,30
+royal blue,4
+dark slate blue,617
+light pink,1
+sea shell,3
+ghost white,3
+dark gray / dark grey,94
+corn flower blue,2
+light sky blue,2
+sandy brown,1
+corn silk,1
+deep sky blue,102
+lemon chiffon,6
+green,266
+olive,14
+plum,2
+blanched almond,4
+teal,4
+light golden rod yellow,4
+ivory,3
+light yellow,3
+medium aqua marine,4
+aqua marine,1
+rosy brown,1
+snow,1
+light green,2
+dark cyan,1
+light sea green,1
