@@ -1,5 +1,5 @@
 from colorMath import *
-from fileOutput import outputDictToFile
+from fileProcessing import outputDictToFile
 from imageReading import readPixelsToDic
 from collections import defaultdict
 import csv
@@ -36,6 +36,19 @@ def comparePixelToColors(imagePixels):
 
             pxColorNamed[bestMatch[1]] += imagePixels[color]
 
-    outputDictToFile('imagePixels.csv', imagePixels)
-    outputDictToFile('pxColorNamed.csv', pxColorNamed)
-    outputDictToFile('listOfColors.csv', listOfColors)
+    # outputDictToFile('imagePixels.csv', imagePixels)
+    # outputDictToFile('pxColorNamed.csv', pxColorNamed)
+    # outputDictToFile('listOfColors.csv', listOfColors)
+
+    return pxColorNamed
+
+def determineDominateColor(pixelData):
+
+    dominateColor = [" ", 0]
+
+    for color in pixelData:
+        if pixelData[color] > dominateColor[1]:
+            dominateColor[0] = color
+            dominateColor[1] = pixelData[color]
+
+    return dominateColor
